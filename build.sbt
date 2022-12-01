@@ -8,5 +8,8 @@ lazy val root = project
 
     scalaVersion := scala3Version,
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
+    libraryDependencies ++= Seq(
+      "dev.zio" %% "zio" % "2.0.4",
+      "dev.zio" %% "zio-streams" % "2.0.4",
+    ),
   )
