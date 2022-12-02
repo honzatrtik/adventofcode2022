@@ -9,6 +9,7 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies ++= Seq(
+      "org.typelevel" %% "cats-core" % "2.8.0",
       "dev.zio" %% "zio" % "2.0.4",
       "dev.zio" %% "zio-streams" % "2.0.4",
     ),
